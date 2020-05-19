@@ -1,0 +1,58 @@
+--when altering the tables remember to put in each 
+reference fk table at the end CASCADE DELETE AND CASCADE UPDATE (SQL VIDEO 4,5,6)
+APPLY INDEXES AS WELL (SQL VIDEO 35 - 38)
+
+-- add modified date column where necessary
+datetime default GETDATE()
+or
+DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+or
+
+Remove all the tinyint datatype  -- limiting pk data incrementation due to unquie identitifier
+change all the PK tinyint and smallint data type to int -- for flexibility of data incrementation
+Change the identity [figures from 1,1 to sequence fig. 1,1 ; 2,3 ; etc)
+
+WorldGeography  (Change table name to Region)
+worldgeography_id (change to Region_ID)
+region_id
+region_name
+city_id_fk
+---Add:
+Country
+country_id
+country
+region_id_fk
+
+--Add:
+City
+city_id
+city
+
+BankAccount -- new columns to be added
+    sort_code nvarchar (10)
+    account_number (10)
+    modified_date  datetime default GETDATE()
+
+BankName (new)  --list of all the banks
+
+BankCard  ---new
+    bankcard_id
+    bankcard_type  --visa, mastercard, debitcard, creditcard etc
+    bankcard_number  --null
+    valid_from
+    expires_end
+    cvc_number
+    bankaccount_id_fk
+    modified_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+
+Costing
+include column: costing_initial   --E or A or I; Modified_Date --very important to keep track of the date this cost changed
+change column datatype from costing_id nvchar(1) to int
+
+Bill
+bill_due_date should not be here --suggest it should be in householdmemberBill table
+need to seperate the fields in the bills 
+    
+    
+     
+   
