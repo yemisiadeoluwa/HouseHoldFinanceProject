@@ -3,7 +3,7 @@ USE master
 GO
 
 /* =============================================
-*	Author:				Lanre Adeoluwa
+*	Author:				Yemisi Adeoluwa
 *	Project Name:		OurMicroFinanceDB OLTP Database
 *	File Name:			create-database.sql
 *	Current Version:	v1.0.3-BETA
@@ -12,11 +12,7 @@ GO
 						Create OurMicroFinanceDB database if it does not exist.
 						But switched to OurMicroFinanceDB database, if it does exist.
 
-*	Change History:
-						v1.0.3-BETA: 02/05/2019 Lanre Adeoluwa: Began project collaboration with Yemisi
-						v1.0.2-BETA: 02/05/2019 Lanre Adeoluwa: Changed HomeFinanceDB to OurMicroFinance
-						v1.0.1-BETA: 04/02/2019 Lanre Adeoluwa: Changed HomeFinance to HomeFinanceDB
-						v1.0.0-BETA: 30/11/2018 Lanre Adeoluwa: Created initial database.
+*	
 
 -- =============================================*/
 

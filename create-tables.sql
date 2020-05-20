@@ -3,7 +3,7 @@ USE OurMicroFinanceDB_v_1_0_3_BETA
 GO
 
 /* =============================================
-*	Author:				Lanre Adeoluwa
+*	Author:				Yemisi Adeoluwa
 *	Project Name:		OurMicroFinanceDB OLTP Database
 *	File Name:			create-tables.sql
 *	Current Version:	v1.0.3-BETA
